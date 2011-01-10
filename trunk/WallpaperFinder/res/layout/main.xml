@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background"
+    android:paddingLeft="5px"
+    android:paddingTop="5px"
+    android:paddingRight="5px">
+    
+    <LinearLayout android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:gravity="center_vertical">
+    	<EditText android:id="@+id/search_box"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:singleLine="true"
+			android:layout_weight="1"
+			android:hint="Enter search term"
+			/>
+		<Button android:id="@+id/search_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/search_button_selector"
+			/>
+    </LinearLayout>
+    
+    <ImageView android:id="@+id/image_view"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_weight="1"/>
+    	
+    <LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/title_background"
+	    android:layout_marginTop="2px"
+	   	android:layout_marginBottom="5px"
+	   	android:gravity="center"
+	   	android:orientation="horizontal"
+	   	android:paddingRight="5px">
+		<TextView android:id="@+id/image_filename" 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:textSize="18px"
+			android:textColor="#12c5c2"
+			android:singleLine="true"
+			android:ellipsize="end"
+			android:paddingRight="10px"
+			android:paddingLeft="10px"/>
+		
+		<ProgressBar android:id="@android:id/progress"
+			style="?android:attr/progressBarStyleSmallTitle"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    	
+   	<Gallery android:id="@+id/gallery"
+	    android:layout_width="fill_parent"
+	    android:layout_height="100px"/>
+</LinearLayout>
