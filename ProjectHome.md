@@ -1,0 +1,1 @@
+Application that searches for a wallpaper using google image search engine
